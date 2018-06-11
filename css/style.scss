@@ -4,20 +4,16 @@ html, body {
 
   .container {
     width: 800px;
-    // min-height: 540px;
-    background-color: white;
-    // align-content: center;
-    // align-self: center;
-    
+    background-color: white;    
     #app {
       margin: 20px;
-      .header:hover, /*.header:hover*/  {
+      .header:hover, {
         background-color: #6844b7;
       }
       .header{
         background-color: #9e38b0;
         margin-top: 2.5px;
-        margin-bottom: 2.5px;
+        margin-bottom: 0;
         padding: 40px 20px;
         color: white;
         font-family: "Verdana", Geneva, Tahoma, sans-serif;
@@ -30,46 +26,35 @@ html, body {
       #arrow1, #arrow2, #arrow3 {
         float: right;
       }
+      .mystyle {
+        width: 100%;
+        padding: 25px;
+        background-color: white;
+        color: black;
+        box-sizing: border-box;
+        /*Add transition for better UX*/
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+
+        border: 2px solid lightgray;
+        margin-top: 0;
+      }
+      .rotation /*added fallback for older browsers*/{
+        /* Safari */
+      -webkit-transform: rotate(-90deg);
+      /* Firefox */
+      -moz-transform: rotate(-90deg);
+      /* IE */
+      -ms-transform: rotate(-90deg);
+      /* Opera */
+      -o-transform: rotate(-90deg);
+      }
     }
   }
 }
 
-.mystyle {
-  width: 100%;
-  padding: 25px;
-  background-color: white;
-  color: black;
-  font-size: 25px;
-  box-sizing: border-box;
-}
-
-// span {
-//   border: solid white;
-//   border-width: 0 3px 3px 0;
-//   // display: inline-block;
-//   padding: 3px;
-// }
-// .arrowDown {
-//   transform: rotate(45deg);
-//   -webkit-transform: rotate(45deg);
-// }
-// .arrowUp {
-//   transform: rotate(-135deg);
-//   -webkit-transform: rotate(-135deg);
-// }
 
 
-
-.rotation{
-  /* Safari */
--webkit-transform: rotate(-90deg);
-
-/* Firefox */
--moz-transform: rotate(-90deg);
-
-/* IE */
--ms-transform: rotate(-90deg);
-
-/* Opera */
--o-transform: rotate(-90deg);
-}

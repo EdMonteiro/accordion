@@ -57,7 +57,5 @@ ourRequest.onload = function() {
         document.getElementById("arrow3").innerHTML = `<p id="arrow3">&#10094</p>`;
       }
   })
-
-
 };
 ourRequest.send();

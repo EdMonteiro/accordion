@@ -11,7 +11,7 @@ html, body {
       html .container #app .header, body .container #app .header {
         background-color: #9e38b0;
         margin-top: 2.5px;
-        margin-bottom: 2.5px;
+        margin-bottom: 0;
         padding: 40px 20px;
         color: white;
         font-family: "Verdana", Geneva, Tahoma, sans-serif; }
@@ -21,23 +21,28 @@ html, body {
         font-size: 1.1em; }
       html .container #app #arrow1, html .container #app #arrow2, html .container #app #arrow3, body .container #app #arrow1, body .container #app #arrow2, body .container #app #arrow3 {
         float: right; }
-
-.mystyle {
-  width: 100%;
-  padding: 25px;
-  background-color: white;
-  color: black;
-  font-size: 25px;
-  box-sizing: border-box; }
-
-.rotation {
-  /* Safari */
-  -webkit-transform: rotate(-90deg);
-  /* Firefox */
-  -moz-transform: rotate(-90deg);
-  /* IE */
-  -ms-transform: rotate(-90deg);
-  /* Opera */
-  -o-transform: rotate(-90deg); }
+      html .container #app .mystyle, body .container #app .mystyle {
+        width: 100%;
+        padding: 25px;
+        background-color: white;
+        color: black;
+        box-sizing: border-box;
+        /*Add transition for better UX*/
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+        border: 2px solid lightgray;
+        margin-top: 0; }
+      html .container #app .rotation, body .container #app .rotation {
+        /* Safari */
+        -webkit-transform: rotate(-90deg);
+        /* Firefox */
+        -moz-transform: rotate(-90deg);
+        /* IE */
+        -ms-transform: rotate(-90deg);
+        /* Opera */
+        -o-transform: rotate(-90deg); }
 
 /*# sourceMappingURL=style.css.map */
