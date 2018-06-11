@@ -19,7 +19,7 @@ html, body {
         margin: 0;
         font-family: "Verdana", Geneva, Tahoma, sans-serif;
         font-size: 1.1em; }
-      html .container #app #arrow, body .container #app #arrow {
+      html .container #app #arrow1, html .container #app #arrow2, html .container #app #arrow3, body .container #app #arrow1, body .container #app #arrow2, body .container #app #arrow3 {
         float: right; }
 
 .mystyle {
