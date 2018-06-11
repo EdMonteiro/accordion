@@ -1,44 +1,44 @@
-html {
+html, body {
   background-color: black;
   display: flex;
 
   .container {
     width: 800px;
-    height: 540px;
-    // position: relative;
+    // min-height: 540px;
     background-color: white;
-    // top: 50%;
-    // left: 50%;
-
-    // justify-content: center;
-    // align-items: center;
+    // align-content: center;
     // align-self: center;
-
-    // #app {
-//       height: 100%;
-//       width: 100%;
-//       // height: 100px;
-//       // padding: 20px;
-      // position: absolute;
-
-
-//       .header {
-//         background-color: #6844b7;
-        
-//         h1.header:hover {
-//             background-color: #9e38b0;
-//           }
-//       }
-    // }  
+    
+    #app {
+      margin: 20px;
+      .header:hover, /*.header:hover*/  {
+        background-color: #6844b7;
+      }
+      .header{
+        background-color: #9e38b0;
+        margin-top: 2.5px;
+        margin-bottom: 2.5px;
+        padding: 40px 20px;
+        color: white;
+        font-family: "Verdana", Geneva, Tahoma, sans-serif;
+      }
+      p {
+        margin: 0;
+        font-family: "Verdana", Geneva, Tahoma, sans-serif;
+        font-size: 1.1em;
+      }
+      #arrow {
+        float: right;
+      }
+    }
   }
 }
-
 
 .mystyle {
   width: 100%;
   padding: 25px;
-  background-color: coral;
-  color: white;
+  background-color: white;
+  color: black;
   font-size: 25px;
   box-sizing: border-box;
 }

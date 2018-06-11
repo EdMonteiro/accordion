@@ -1,16 +1,32 @@
-html {
+html, body {
   background-color: black;
   display: flex; }
-  html .container {
+  html .container, body .container {
     width: 800px;
-    height: 540px;
     background-color: white; }
+    html .container #app, body .container #app {
+      margin: 20px; }
+      html .container #app .header:hover, body .container #app .header:hover {
+        background-color: #6844b7; }
+      html .container #app .header, body .container #app .header {
+        background-color: #9e38b0;
+        margin-top: 2.5px;
+        margin-bottom: 2.5px;
+        padding: 40px 20px;
+        color: white;
+        font-family: "Verdana", Geneva, Tahoma, sans-serif; }
+      html .container #app p, body .container #app p {
+        margin: 0;
+        font-family: "Verdana", Geneva, Tahoma, sans-serif;
+        font-size: 1.1em; }
+      html .container #app #arrow, body .container #app #arrow {
+        float: right; }
 
 .mystyle {
   width: 100%;
   padding: 25px;
-  background-color: coral;
-  color: white;
+  background-color: white;
+  color: black;
   font-size: 25px;
   box-sizing: border-box; }
 
