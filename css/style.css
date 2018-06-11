@@ -3,7 +3,8 @@ html, body {
   display: flex; }
   html .container, body .container {
     width: 800px;
-    background-color: white; }
+    background-color: white;
+    display: block; }
     html .container #app, body .container #app {
       margin: 20px; }
       html .container #app .header:hover, body .container #app .header:hover {
@@ -46,5 +47,7 @@ html, body {
         -ms-transform: rotate(-90deg);
         /* Opera */
         -o-transform: rotate(-90deg); }
+
+/*Media Query - not needed for this project, simple component not full webpage*/
 
 /*# sourceMappingURL=style.css.map */
