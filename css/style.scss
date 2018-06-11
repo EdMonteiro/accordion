@@ -2,33 +2,74 @@
 //   vertical-align: middle;
 // }
 
-.accordion {
-  background-color: #9e38b0;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
+// .accordion {
+//   background-color: #9e38b0;
+//   color: #444;
+//   cursor: pointer;
+//   padding: 18px;
+//   width: 100%;
+//   max-width: 540px; /*measured image width and declared as max*/
+//   text-align: left;
+//   // border: none;
+//   // outline: none;
+//   transition: 0.6s;
+//   display: block; /*to prevent the content from staying side by side*/
+
+// }
+
+// /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+// .active, .accordion:hover {
+//   background-color: #6844b7;
+// }
+
+// /* Style the accordion panel. Note: hidden by default */
+// .panel {
+//   padding: 0 18px;
+//   background-color: #FFFFFF;
+//   display: none;
+//   overflow: hidden;
+// }
+
+
+
+
+
+// html {
+//   background-color: black;
+
+//   .container {
+//     width: 800px;
+//     height: 540px;
+//     position: relative;
+    
+//     #app {
+//       background-color: white;
+//       height: 100%;
+//       width: 100%;
+//       // height: 100px;
+//       // padding: 20px;
+
+//       position: absolute;
+//       top: 50%;
+//       left: 50%;
+
+//       .header {
+//         background-color: #6844b7;
+        
+//         h1.header:hover {
+//             background-color: #9e38b0;
+//           }
+//       }
+//     }  
+//   }
+// }
+
+
+.mystyle {
   width: 100%;
-  max-width: 540px; /*measured image width and declared as max*/
-  text-align: left;
-  // border: none;
-  // outline: none;
-  transition: 0.6s;
-  display: block; /*to prevent the content from staying side by side*/
-
+  padding: 25px;
+  background-color: coral;
+  color: white;
+  font-size: 25px;
+  box-sizing: border-box;
 }
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: #6844b7;
-}
-
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-  padding: 0 18px;
-  background-color: #FFFFFF;
-  display: none;
-  overflow: hidden;
-}
-
-
-
