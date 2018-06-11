@@ -30,4 +30,14 @@ html, body {
   font-size: 25px;
   box-sizing: border-box; }
 
+.rotation {
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg); }
+
 /*# sourceMappingURL=style.css.map */
