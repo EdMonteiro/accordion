@@ -1,7 +1,7 @@
-var ourRequest = new XMLHttpRequest();
+let ourRequest = new XMLHttpRequest();
 ourRequest.open('GET', 'https://design.propcom.co.uk/buildtest/accordion-data.json');
 ourRequest.onload = function() {
-  var ourData = JSON.parse(ourRequest.responseText);
+  let ourData = JSON.parse(ourRequest.responseText);
   // console.log(ourData);
   document.getElementById("app").innerHTML = `
     <h1 class="header" id="btn1">
@@ -28,7 +28,7 @@ ourRequest.onload = function() {
 /* Get a forEach loop going on after prototyping */
 /* Get a more similar arrow icon or make with css*/
   // working code
-  document.getElementById("btn1").addEventListener("click", function() {
+  document.getElementById("btn1").addEventListener("click", () => {
     if( (document.getElementById('paragraph1').classList.toggle("mystyle")) ) {
         document.getElementById("paragraph1").innerHTML = `<p>${ourData.blocks["0"].content}</p>`;
         document.getElementById("arrow1").innerHTML = `<p id="arrow1">&#10095</p>`;
@@ -38,7 +38,7 @@ ourRequest.onload = function() {
       }
   })
 
-  document.getElementById("btn2").addEventListener("click", function() {
+  document.getElementById("btn2").addEventListener("click", () => {
     if( (document.getElementById('paragraph2').classList.toggle("mystyle")) ) {
         document.getElementById('paragraph2').innerHTML = `<p>${ourData.blocks["1"].content}</p>`;
         document.getElementById('arrow2').innerHTML = `<p id="arrow2">&#10095</p>`;
@@ -48,7 +48,7 @@ ourRequest.onload = function() {
       }
   })
 
-  document.getElementById("btn3").addEventListener("click", function() {
+  document.getElementById("btn3").addEventListener("click", () => {
     if( (document.getElementById('paragraph3').classList.toggle("mystyle")) ) {
         document.getElementById("paragraph3").innerHTML = `<p>${ourData.blocks["2"].content}</p>`;
         document.getElementById("arrow3").innerHTML = `<p id="arrow3">&#10095</p>`;
